@@ -2,7 +2,11 @@
 
     <!-- Base application theme. -->
     <style name="CAppTheme" parent="Base.AppTheme">
-        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/AppTheme.AppBarOverlay.Light</item>
+    </style>
+
+    <style name="CAppThemeBarDark" parent="Base.AppTheme">
+        <item name="actionBarStyle">@style/AppTheme.AppBarOverlay.Dark</item>
     </style>
 
     <style name="CAppTransparentTheme" parent="CAppTheme">
@@ -43,38 +47,12 @@
         <item name="android:popupBackground">@color/background_menu</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
         <item name="overlapAnchor">false</item>
+        <item name="colorAccent">@color/md_grey_900</item>
     </style>
 
-    <style name="anim_pop_checkaddshelf">
-        <item name="android:windowEnterAnimation">@anim/anim_pop_checkaddshelf_in</item>
-        <item name="android:windowExitAnimation">@anim/anim_pop_checkaddshelf_out</item>
-    </style>
-
-    <style name="anim_pop_chapterlist">
-        <item name="android:windowEnterAnimation">@anim/anim_pop_chapterlist_in</item>
-        <item name="android:windowExitAnimation">@anim/anim_pop_chapterlist_out</item>
-    </style>
-
-    <style name="anim_pop_moresetting">
-        <item name="android:windowEnterAnimation">@anim/anim_pop_moresetting_in</item>
-        <item name="android:windowExitAnimation">@anim/anim_pop_moresetting_out</item>
-    </style>
-
-    <style name="anim_pop_windowlight">
-        <item name="android:windowEnterAnimation">@anim/anim_pop_windowlight_in</item>
-        <item name="android:windowExitAnimation">@anim/anim_pop_windowlight_out</item>
-    </style>
-
-    <style name="anim_pop_windowmenumore">
-        <item name="android:windowEnterAnimation">@anim/anim_pop_windowmenumore_in</item>
-        <item name="android:windowExitAnimation">@anim/anim_pop_windowmenumore_out</item>
-    </style>
-
-    <style name="NopaddingToolbar" parent="Base.Widget.AppCompat.Toolbar">
+    <style name="NoPaddingToolbar" parent="Base.Widget.AppCompat.Toolbar">
         <item name="contentInsetStartWithNavigation">0dp</item>
     </style>
 
@@ -90,4 +68,11 @@
         <item name="android:background">@drawable/bg_shadow_bottom</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/md_grey_900</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorAccent">@color/md_grey_100</item>
+    </style>
 </resources>
